@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "jsx": "preserve", // ou "react" dependendo da versão do React
+    "jsx": "react-jsx", // ou "react" dependendo da versão do React
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "target": "es5",
