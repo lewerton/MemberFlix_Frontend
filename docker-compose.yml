@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  frontend:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://127.0.0.1:8000/api
+    # If you have a backend service container, you can add:
+    # depends_on:
+    #   - backend
