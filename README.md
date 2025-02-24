@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Memberflix Frontend
+Esta é a aplicação frontend do Memberflix, construída com Next.js, React e Material UI.
 
-## Getting Started
+## Requisitos
+- Node.js (versão LTS recomendada)
+- NPM  
 
-First, run the development server:
+## Instalação
+1. Clone o repositório:
+   ```bash
+   git clone <URL_DO_REPOSITÓRIO>
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. Acesse a pasta do projeto:
+   ```bash
+   cd memberflix_frontend
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Instale as dependências:
+   ```bash
+   npm install
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **dev**: Inicia o servidor de desenvolvimento com Next.js e Turbopack.
+  ```bash
+  npm run dev
+  ```
 
-## Learn More
+- **build**: Gera a build de produção.
+  ```bash
+  npm run build
+  ```
 
-To learn more about Next.js, take a look at the following resources:
+- **start**: Inicia a aplicação em modo produção.
+  ```bash
+  npm run start
+  ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **lint**: Executa o ESLint para verificar e corrigir problemas no código.
+  ```bash
+  npm run lint
+  ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **test**: Executa os testes com Jest.
+  ```bash
+  npm run test
+  ```
+  
 
-## Deploy on Vercel
+## Dependências Principais
+- **Next.js**: Framework React para renderização do lado do servidor e construção de aplicações modernas.
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **Material UI**: Biblioteca de componentes React para criar interfaces modernas e responsivas.
+- **Axios**: Cliente HTTP para fazer requisições à API.
+- **React Material UI Carousel**: Componente para exibição de conteúdos em carousel.
+- **HLS.js**: Biblioteca para reprodução de streams HLS.
+- **React Player**: Componente para reprodução de mídia.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Dependências de Desenvolvimento
+- **Jest**: Framework de testes.
+- **React Testing Library**: Biblioteca para testar componentes React.
+- **ESLint**: Ferramenta de linting para identificar e corrigir problemas no código.
+- **TailwindCSS**: Utilitário CSS para estilização rápida (se estiver em uso).
+- **TypeScript**: Superset do JavaScript com tipagem estática.  
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Considerações
+- O projeto utiliza Next.js na versão 15.1.7 e React 18.
+- A variável de ambiente `NEXT_PUBLIC_API_URL` pode ser configurada para apontar para a URL da sua API.
+- Foi configurado para usar o Turbopack no ambiente de desenvolvimento.
